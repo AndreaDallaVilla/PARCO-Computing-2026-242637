@@ -49,7 +49,7 @@ go to the function multiply and comment:
 //      printf("Schedule: %s, Chunk Size: %d, Time: %f seconds\n", schedulee_types[s], chunk_sizes[c], stop - start);
 
 
-decomment :  
+uncomment :  
 
 GET_TIME(start);
 
@@ -92,7 +92,7 @@ in the main function.
  
  #pragma omp parallel for  num_threads(thread_count) /* simd  schedule(static, chunk_sizes[c]) */
 
-decomment: 
+uncomment: 
 
  start= omp_get_wtime();
  
@@ -132,7 +132,7 @@ to compile the parallel code with scheduling strategies but without simd vectori
  
  #pragma omp parallel for  num_threads(thread_count) /* simd */ schedule(static, chunk_sizes[c]) 
 
-decomment: 
+uncomment: 
 
  for (int s = 0; s < 3; s++) 
  
@@ -177,7 +177,7 @@ to compile the parallel code with scheduling strategies and simd vectorization:
  
  #pragma omp parallel for  /* num_threads(thread_count)*/  simd  schedule(static, chunk_sizes[c]) 
 
-decomment: 
+uncomment: 
 
  for (int s = 0; s < 3; s++) 
  
