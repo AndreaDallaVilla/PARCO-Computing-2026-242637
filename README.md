@@ -22,18 +22,18 @@ enter in a node with:
 
 - qsub -I -q short_cpuQ -l select=1:ncpus=64:mem=64gb,walltime=01:00:00
 
-load "first_deliverable_code" on the cluster and enter in this directory.
+load "first_deliverable_code" on the cluster and enter in this directory.␣␣
 to compile the sequential code:
-- vim main.cpp
-go to the function multiply and comment:
-  //   for (int s = 0; s < 3; s++) 
-  //    for (int c = 0; c < 3; c++) 
+- vim main.cpp␣␣
+go to the function multiply and comment:␣␣
+  //   for (int s = 0; s < 3; s++) ␣␣
+  //    for (int c = 0; c < 3; c++) ␣␣
 
-//start= omp_get_wtime();
-//      #pragma omp parallel for  num_threads(thread_count) /* simd*/  schedule(static, chunk_sizes[c])
-//                 #pragma omp parallel for reduction(+:temp)
-//stop = omp_get_wtime();
-//      printf("Schedule: %s, Chunk Size: %d, Time: %f seconds\n", schedulee_types[s], chunk_sizes[c], stop - start);
+//start= omp_get_wtime();␣␣
+//      #pragma omp parallel for  num_threads(thread_count) /* simd*/  schedule(static, chunk_sizes[c])␣␣
+//                 #pragma omp parallel for reduction(+:temp)␣␣
+//stop = omp_get_wtime();␣␣
+//      printf("Schedule: %s, Chunk Size: %d, Time: %f seconds\n", schedulee_types[s], chunk_sizes[c], stop - start);␣␣
 
 decomment :  
 
