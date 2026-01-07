@@ -9,7 +9,9 @@ Sparse matrix vector multiplication (SpMV)
 # Clone the repository
 open your local shell use
 git clone https://github.com/AndreaDallaVilla/PARCO-Computing-2026-242637.git
-
+you have to dowload matrices from https://sparse.tamu.edu/ since I used matrices too large and I can't upload on the repo.
+The matrices are: cage15.mtx, F1.mtx, Spielman_k500.mtx
+ship_001.mtx is already into the repo.
 # programming language
 c
 
