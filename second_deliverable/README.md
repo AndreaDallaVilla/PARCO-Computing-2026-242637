@@ -53,3 +53,12 @@ otherwise with strong scaling:
 - mpicc main.c mmio.c -o code.out
 and
 -  mpirun ./code.out matrix.mtx
+
+to run mpi.pbs do
+- qsub mpi.pbs
+
+wait that the job finishes, you can check the job status with
+- qstat -u yourhostname
+
+in conclusion, open name.o to visualize the output or do
+- tail -n 50 name.o
